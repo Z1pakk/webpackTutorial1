@@ -6,6 +6,8 @@ start().then(r => {
     console.log(r)
 })
 
+const unused = 42
+
 class Util {
     static id = Date.now()
 }
