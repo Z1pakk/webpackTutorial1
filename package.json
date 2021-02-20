@@ -1,0 +1,28 @@
+{
+  "name": "webpack-course",
+  "version": "1.0.0",
+  "description": "Webpack course by Vladilen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Z1pakk/webpackTutorial1.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "webpack"
+  ],
+  "author": "Vlad Shumskyi <wladik420@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Z1pakk/webpackTutorial1/issues"
+  },
+  "homepage": "https://github.com/Z1pakk/webpackTutorial1#readme",
+  "dependencies": {
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
+  }
+}
