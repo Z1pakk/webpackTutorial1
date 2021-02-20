@@ -6,7 +6,7 @@ import WebpackLogo from './assets/webpack-logo'
 import xml from './assets/data.xml'
 import csv from './assets/data.csv'
 
-const post = new Post('Webpack Post Title', WebpackLogo)
+const post = new Post('Webpack Post Title2', WebpackLogo)
 
 $('pre').html(post.toString())
 
