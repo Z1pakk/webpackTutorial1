@@ -2,7 +2,7 @@
   "name": "webpack-course",
   "version": "1.0.0",
   "description": "Webpack course by Vladilen",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
@@ -23,7 +23,9 @@
     "url": "https://github.com/Z1pakk/webpackTutorial1/issues"
   },
   "homepage": "https://github.com/Z1pakk/webpackTutorial1#readme",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.2",
