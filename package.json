@@ -9,14 +9,18 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
-    "lint": "eslint ./src",
-    "lint::fix": "eslint ./src --fix"
+    "lint": "cross-env NODE_ENV=development eslint ./src",
+    "lint::fix": "eslint ./src --fix",
+    "lint::prod": "cross-env NODE_ENV=production eslint ./src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Z1pakk/webpackTutorial1.git"
   },
-  "browserslist": "> 0.25%, not dead",
+  "browserslist": [
+    "> 0.25%",
+    "not dead"
+  ],
   "keywords": [
     "js",
     "javascript",
@@ -52,11 +56,13 @@
     "csv-loader": "^3.0.3",
     "eslint": "^7.20.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.2.0",
     "less": "^4.1.1",
