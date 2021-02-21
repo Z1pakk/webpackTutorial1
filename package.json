@@ -10,8 +10,9 @@
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json",
     "lint": "cross-env NODE_ENV=development eslint ./src",
-    "lint::fix": "eslint ./src --fix --color",
-    "lint::prod": "cross-env NODE_ENV=production eslint ./src"
+    "lint::fix": "eslint ./src --fix --cache --color",
+    "lint::prod": "cross-env NODE_ENV=production eslint ./src",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,6 @@
   "homepage": "https://github.com/Z1pakk/webpackTutorial1#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "eslint-config-prettier": "^7.2.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
@@ -61,7 +61,6 @@
     "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.2.0",
@@ -88,7 +87,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,jsx,ts,tsx}": [
       "npm run lint::fix",
       "git add"
     ]

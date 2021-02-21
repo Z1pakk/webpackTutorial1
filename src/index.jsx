@@ -32,11 +32,10 @@ import { render } from 'react-dom';
 //
 // const x = 100;
 
-console.log(x);
+console.log("hello"           );
 
 const App = () => (
   <div className="container">
-
     <h1>Webpack Course</h1>
 
     <hr />
@@ -56,7 +55,6 @@ const App = () => (
     <div className="card">
       <h2>Sass</h2>
     </div>
-
   </div>
 );
 

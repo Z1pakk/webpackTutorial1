@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     'no-unused-vars': 'warn',
     'linebreak-style': 'off',
+    'no-plusplus': 'off',
     semi: 'off',
     'no-console': isProd ? 'error' : 'off',
   },
@@ -24,7 +25,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {},
-      webpack: { },
+      webpack: {},
     },
   },
-}
+};

@@ -49,12 +49,8 @@ const cssLoaders = (extra) => {
 
 const babelOptions = (preset) => {
   const opts = {
-    presets: [
-      '@babel/preset-env',
-    ],
-    plugins: [
-      '@babel/plugin-proposal-class-properties',
-    ],
+    presets: ['@babel/preset-env'],
+    plugins: ['@babel/plugin-proposal-class-properties'],
   };
 
   if (preset) {
@@ -65,10 +61,12 @@ const babelOptions = (preset) => {
 };
 
 const jsLoaders = () => {
-  const loaders = [{
-    loader: 'babel-loader',
-    options: babelOptions('@babel/preset-typescript'),
-  }];
+  const loaders = [
+    {
+      loader: 'babel-loader',
+      options: babelOptions('@babel/preset-typescript'),
+    },
+  ];
 
   if (isDev) {
     loaders.push('eslint-loader');
