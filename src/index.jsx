@@ -32,7 +32,7 @@ import { render } from 'react-dom';
 //
 // const x = 100;
 
-console.log("hello"           );
+console.log('hello');
 
 const App = () => (
   <div className="container">
